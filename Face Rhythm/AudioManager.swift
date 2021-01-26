@@ -65,8 +65,8 @@ class AudioManager{
     }
     
     public func playNote(note: UInt8){
-        let midiNumberC3 = 48
-        self.pitchControl.pitch = Float(100*(Int(note) - midiNumberC3))
+        let midiNumberC4 = 60
+        self.pitchControl.pitch = Float(100*(Int(note) - midiNumberC4))
         self.audioPlayerNode.scheduleFile(singleNoteFile, at: nil, completionHandler: nil)
         self.audioPlayerNode.play()
     }

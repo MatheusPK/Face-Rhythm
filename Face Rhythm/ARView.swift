@@ -17,6 +17,8 @@ class ARView: UIViewController, ARSCNViewDelegate {
     
     var arView: ARSCNView!
     
+    var lastMov: Moves? = nil
+    
     override func loadView() {
         arView = ARSCNView(frame: .zero)
         self.view = arView
@@ -56,23 +58,61 @@ class ARView: UIViewController, ARSCNViewDelegate {
         }
     }
     func update(withFaceAnchor faceAnchor: ARFaceAnchor) {
-        guard let right = faceAnchor.blendShapes[.eyeBlinkLeft] as? Float else {return}
-        guard let left = faceAnchor.blendShapes[.eyeBlinkRight] as? Float else {return}
+        guard let right = faceAnchor.blendShapes[.mouthRight] as? Float else {return}
+        guard let left = faceAnchor.blendShapes[.mouthLeft] as? Float else {return}
         guard let up = faceAnchor.blendShapes[.jawOpen] as? Float else {return}
         guard let down = faceAnchor.blendShapes[.mouthPucker] as? Float else {return}
         
-        if up > 0.5 {
-            self.ARViewDelegate.movePlayer(sound: 42)
-        }
-        if left > 0.5 {
-            self.ARViewDelegate.movePlayer(sound: 57)
-        }
-        if right > 0.5 {
-            self.ARViewDelegate.movePlayer(sound: 70)
-        }
+//        let notes:[UInt8: Moves] = [
+//            0 : .idle,
+//            63 : .leftEyeBlink,
+//            65: .rightEyeBlink,
+//            67: .jawOpen,
+//            70: .mouthPucker
+//        ]
         
-        if down > 0.5 {
-            self.ARViewDelegate.movePlayer(sound: 89)
+        let movs:[Moves: UInt8] = [
+            .idle : 0,
+            .leftEyeBlink : 63,
+            .rightEyeBlink: 65,
+            .jawOpen: 67,
+            .mouthPucker: 70
+        ]
+        
+        if up > 0.5 {
+            //self.ARViewDelegate.movePlayer(sound: 42)
+            if self.lastMov != .jawOpen{
+                self.lastMov = .jawOpen
+                AudioManager.singleInstance.stopNote()
+                AudioManager.singleInstance.playNote(note: movs[.jawOpen]!)
+            }
+        }
+        else if left > 0.5 {
+            
+            if self.lastMov != .rightEyeBlink{
+                self.lastMov = .rightEyeBlink
+                AudioManager.singleInstance.stopNote()
+                AudioManager.singleInstance.playNote(note: movs[.rightEyeBlink]!)
+            }
+            
+        }
+        else if right > 0.5 {
+            if  self.lastMov != .leftEyeBlink{
+                self.lastMov = .leftEyeBlink
+                AudioManager.singleInstance.stopNote()
+                AudioManager.singleInstance.playNote(note: movs[.leftEyeBlink]!)
+            }
+        }
+        else if down > 0.5 {
+            if self.lastMov != .mouthPucker{
+                self.lastMov = .mouthPucker
+                AudioManager.singleInstance.stopNote()
+                AudioManager.singleInstance.playNote(note: movs[.mouthPucker]!)
+            }
+        }
+        else{
+            self.lastMov = nil
+            AudioManager.singleInstance.stopNote()
         }
         
         //funcao que envia o movimento para a gamescene e la a gnt trata pra ver se o movimento e o certo

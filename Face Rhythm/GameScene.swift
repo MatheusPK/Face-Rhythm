@@ -24,6 +24,7 @@ class GameScene: SKScene, ARViewDelegate {
         self.view?.addSubview(myArView.view)
         self.view?.subviews[0].frame = CGRect(x: 15, y: 30, width: 90, height: 90)
         
+        AudioManager.singleInstance.getMusicTimeStamp()
         AudioManager.singleInstance.playMusic()
         MidiManager.singleInstance.startCheckingNotes()
     }
