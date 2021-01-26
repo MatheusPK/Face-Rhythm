@@ -16,7 +16,6 @@ class GameScene: SKScene, ARViewDelegate {
     
     override func didMove(to view: SKView) {
         self.addChild(SKLabelNode(text: "oi"))
-        
         self.character = SKCharacter()
         self.addChild(self.character)
         
