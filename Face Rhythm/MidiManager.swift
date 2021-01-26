@@ -7,7 +7,6 @@
 
 import Foundation
 import AVFoundation
-import MidiParser
 
 protocol MidiManagerDelegate{
     func noteOn(note: UInt8)

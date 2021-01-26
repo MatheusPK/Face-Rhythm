@@ -49,6 +49,8 @@
 		E407B72B25C09837003E6747 /* MidiEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B70825C09837003E6747 /* MidiEventType.swift */; };
 		E407B72C25C09837003E6747 /* MidiEventUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B70925C09837003E6747 /* MidiEventUserData.swift */; };
 		E407B72D25C09837003E6747 /* MidiExtendedTempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B70A25C09837003E6747 /* MidiExtendedTempo.swift */; };
+		E407B73225C09DB9003E6747 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B73125C09DB9003E6747 /* AudioManager.swift */; };
+		E407B73525C09DD1003E6747 /* MidiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B73425C09DD1003E6747 /* MidiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,8 @@
 		E407B70825C09837003E6747 /* MidiEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiEventType.swift; sourceTree = "<group>"; };
 		E407B70925C09837003E6747 /* MidiEventUserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiEventUserData.swift; sourceTree = "<group>"; };
 		E407B70A25C09837003E6747 /* MidiExtendedTempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiExtendedTempo.swift; sourceTree = "<group>"; };
+		E407B73125C09DB9003E6747 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		E407B73425C09DD1003E6747 /* MidiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				E407B6DF25C09837003E6747 /* MidiParser Source */,
 				E407B6C825C097D8003E6747 /* AppDelegate.swift */,
 				E407B6CE25C097D8003E6747 /* GameScene.swift */,
+				E407B73425C09DD1003E6747 /* MidiManager.swift */,
+				E407B73125C09DB9003E6747 /* AudioManager.swift */,
 				E407B6D025C097D8003E6747 /* GameViewController.swift */,
 				8B32B47A25C09CE70003BE83 /* ARView.swift */,
 				E407B6D225C097D8003E6747 /* Main.storyboard */,
@@ -344,7 +350,9 @@
 				E407B72C25C09837003E6747 /* MidiEventUserData.swift in Sources */,
 				E407B71E25C09837003E6747 /* EventProtocol.swift in Sources */,
 				E407B6D125C097D8003E6747 /* GameViewController.swift in Sources */,
+				E407B73225C09DB9003E6747 /* AudioManager.swift in Sources */,
 				E407B72325C09837003E6747 /* MidiTime.swift in Sources */,
+				E407B73525C09DD1003E6747 /* MidiManager.swift in Sources */,
 				E407B70F25C09837003E6747 /* Ticks.swift in Sources */,
 				E407B71525C09837003E6747 /* MidiData.swift in Sources */,
 				E407B72D25C09837003E6747 /* MidiExtendedTempo.swift in Sources */,
