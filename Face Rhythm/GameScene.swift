@@ -23,11 +23,19 @@ class GameScene: SKScene, ARViewDelegate {
         self.myArView.ARViewDelegate = self
         self.view?.addSubview(myArView.view)
         self.view?.subviews[0].frame = CGRect(x: 15, y: 30, width: 90, height: 90)
+        
+        AudioManager.singleInstance.playMusic()
+        let _ = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
     
     func movePlayer(sound: UInt8) {
-        self.character.move(sound: sound)
+//        self.character.move(sound: sound)
     }
+    
+    @objc func updateTime(){
+        MidiManager.singleInstance.checkNoteOn()
+    }
+    
 }
 
 protocol ARViewDelegate {

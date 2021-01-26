@@ -46,6 +46,7 @@ class MidiManager{
         let track = self.midiData.noteTracks[0]
 
         for note in track{
+            //print(note.timeStamp.getTimeInSeconds().roundTo(places: 2), AudioManager.singleInstance.getMusicTimeStamp().roundTo(places: 2))
             if note.timeStamp.getTimeInSeconds().roundTo(places: 2) == AudioManager.singleInstance.getMusicTimeStamp().roundTo(places: 2){
                 
                 for delegate in self.delegates{

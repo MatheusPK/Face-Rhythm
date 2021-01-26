@@ -51,6 +51,10 @@
 		E407B72D25C09837003E6747 /* MidiExtendedTempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B70A25C09837003E6747 /* MidiExtendedTempo.swift */; };
 		E407B73225C09DB9003E6747 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B73125C09DB9003E6747 /* AudioManager.swift */; };
 		E407B73525C09DD1003E6747 /* MidiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B73425C09DD1003E6747 /* MidiManager.swift */; };
+		E407B73F25C0A3AB003E6747 /* C5.5 - 1.1.mid in Resources */ = {isa = PBXBuildFile; fileRef = E407B73B25C0A3AB003E6747 /* C5.5 - 1.1.mid */; };
+		E407B74025C0A3AB003E6747 /* C5.5 - 1.1 full.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E407B73C25C0A3AB003E6747 /* C5.5 - 1.1 full.mp3 */; };
+		E407B74125C0A3AB003E6747 /* C3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E407B73D25C0A3AB003E6747 /* C3.mp3 */; };
+		E407B74225C0A3AB003E6747 /* C5.5 - 1.1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E407B73E25C0A3AB003E6747 /* C5.5 - 1.1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +104,10 @@
 		E407B70A25C09837003E6747 /* MidiExtendedTempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiExtendedTempo.swift; sourceTree = "<group>"; };
 		E407B73125C09DB9003E6747 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		E407B73425C09DD1003E6747 /* MidiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiManager.swift; sourceTree = "<group>"; };
+		E407B73B25C0A3AB003E6747 /* C5.5 - 1.1.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "C5.5 - 1.1.mid"; sourceTree = "<group>"; };
+		E407B73C25C0A3AB003E6747 /* C5.5 - 1.1 full.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "C5.5 - 1.1 full.mp3"; sourceTree = "<group>"; };
+		E407B73D25C0A3AB003E6747 /* C3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = C3.mp3; sourceTree = "<group>"; };
+		E407B73E25C0A3AB003E6747 /* C5.5 - 1.1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "C5.5 - 1.1.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +148,7 @@
 		E407B6C725C097D8003E6747 /* Face Rhythm */ = {
 			isa = PBXGroup;
 			children = (
+				E407B73A25C0A36F003E6747 /* AudioFiles */,
 				8B32B47625C09CA00003BE83 /* SKElements */,
 				E407B6DF25C09837003E6747 /* MidiParser Source */,
 				E407B6C825C097D8003E6747 /* AppDelegate.swift */,
@@ -261,6 +270,17 @@
 			path = KeySignature;
 			sourceTree = "<group>";
 		};
+		E407B73A25C0A36F003E6747 /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E407B73D25C0A3AB003E6747 /* C3.mp3 */,
+				E407B73C25C0A3AB003E6747 /* C5.5 - 1.1 full.mp3 */,
+				E407B73B25C0A3AB003E6747 /* C5.5 - 1.1.mid */,
+				E407B73E25C0A3AB003E6747 /* C5.5 - 1.1.mp3 */,
+			);
+			path = AudioFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,7 +338,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E407B74225C0A3AB003E6747 /* C5.5 - 1.1.mp3 in Resources */,
+				E407B74125C0A3AB003E6747 /* C3.mp3 in Resources */,
+				E407B74025C0A3AB003E6747 /* C5.5 - 1.1 full.mp3 in Resources */,
 				E407B6D425C097D8003E6747 /* Main.storyboard in Resources */,
+				E407B73F25C0A3AB003E6747 /* C5.5 - 1.1.mid in Resources */,
 				E407B6D625C097D9003E6747 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,7 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3MWCW3Z467;
+				DEVELOPMENT_TEAM = T9R9UW74ZM;
 				INFOPLIST_FILE = "Face Rhythm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,7 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3MWCW3Z467;
+				DEVELOPMENT_TEAM = T9R9UW74ZM;
 				INFOPLIST_FILE = "Face Rhythm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
