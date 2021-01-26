@@ -42,11 +42,18 @@ class MidiManager{
         self.midiData.load(data: data)
     }
     
-    public func checkNoteOn() {
+    public func startCheckingNotes(){
+        let _ = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+    }
+    
+    @objc private func updateTime(){
+        self.checkNoteOn()
+    }
+    
+    private func checkNoteOn() {
         let track = self.midiData.noteTracks[0]
 
         for note in track{
-            //print(note.timeStamp.getTimeInSeconds().roundTo(places: 2), AudioManager.singleInstance.getMusicTimeStamp().roundTo(places: 2))
             if note.timeStamp.getTimeInSeconds().roundTo(places: 2) == AudioManager.singleInstance.getMusicTimeStamp().roundTo(places: 2){
                 
                 for delegate in self.delegates{

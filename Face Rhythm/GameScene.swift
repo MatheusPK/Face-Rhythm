@@ -25,15 +25,11 @@ class GameScene: SKScene, ARViewDelegate {
         self.view?.subviews[0].frame = CGRect(x: 15, y: 30, width: 90, height: 90)
         
         AudioManager.singleInstance.playMusic()
-        let _ = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        MidiManager.singleInstance.startCheckingNotes()
     }
     
     func movePlayer(sound: UInt8) {
 //        self.character.move(sound: sound)
-    }
-    
-    @objc func updateTime(){
-        MidiManager.singleInstance.checkNoteOn()
     }
     
 }
