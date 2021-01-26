@@ -19,7 +19,7 @@ public extension MidiTime {
     }
 }
 
-///Minhas cagadas
+///Alteração no MidiParser
 public extension MidiTime{
     func getTimeInSeconds() -> TimeInterval{
         return self.inSeconds
