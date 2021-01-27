@@ -10,6 +10,7 @@
 		8B32B47825C09CB10003BE83 /* SKCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B47725C09CB10003BE83 /* SKCharacter.swift */; };
 		8B32B47B25C09CE70003BE83 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B47A25C09CE70003BE83 /* ARView.swift */; };
 		8B32B48225C0DAAC0003BE83 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B48125C0DAAC0003BE83 /* Extensions.swift */; };
+		8B32B48525C1FC0B0003BE83 /* LevelRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B48425C1FC0B0003BE83 /* LevelRules.swift */; };
 		E407B6C925C097D8003E6747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B6C825C097D8003E6747 /* AppDelegate.swift */; };
 		E407B6CF25C097D8003E6747 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B6CE25C097D8003E6747 /* GameScene.swift */; };
 		E407B6D125C097D8003E6747 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B6D025C097D8003E6747 /* GameViewController.swift */; };
@@ -62,6 +63,7 @@
 		8B32B47725C09CB10003BE83 /* SKCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCharacter.swift; sourceTree = "<group>"; };
 		8B32B47A25C09CE70003BE83 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		8B32B48125C0DAAC0003BE83 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8B32B48425C1FC0B0003BE83 /* LevelRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelRules.swift; sourceTree = "<group>"; };
 		E407B6C525C097D8003E6747 /* Face Rhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Face Rhythm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E407B6C825C097D8003E6747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E407B6CE25C097D8003E6747 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				E407B6DF25C09837003E6747 /* MidiParser Source */,
 				E407B6C825C097D8003E6747 /* AppDelegate.swift */,
 				E407B6CE25C097D8003E6747 /* GameScene.swift */,
+				8B32B48425C1FC0B0003BE83 /* LevelRules.swift */,
 				8B32B48125C0DAAC0003BE83 /* Extensions.swift */,
 				E407B73425C09DD1003E6747 /* MidiManager.swift */,
 				E407B73125C09DB9003E6747 /* AudioManager.swift */,
@@ -367,6 +370,7 @@
 				E407B71625C09837003E6747 /* HeaderChunk.swift in Sources */,
 				E407B71725C09837003E6747 /* MidiInfoKey.swift in Sources */,
 				E407B70B25C09837003E6747 /* MidiTempoTrack.swift in Sources */,
+				8B32B48525C1FC0B0003BE83 /* LevelRules.swift in Sources */,
 				E407B71325C09837003E6747 /* GMPatch.swift in Sources */,
 				E407B71825C09837003E6747 /* EventIterator.swift in Sources */,
 				E407B6CF25C097D8003E6747 /* GameScene.swift in Sources */,
