@@ -52,7 +52,7 @@ class AudioManager{
     
     private func loadPlayer(){
         do{
-            if let mp3File = Bundle.main.url(forResource: "C5.5 - 1.1 full", withExtension: ".mp3"){
+            if let mp3File = Bundle.main.url(forResource: LevelRules.currentLevel().fileName, withExtension: ".mp3"){
                 self.musicAudioPlayer = try AVAudioPlayer(contentsOf: mp3File)
             }else{
                 print("Arquivo mp3 nao encontrado!")

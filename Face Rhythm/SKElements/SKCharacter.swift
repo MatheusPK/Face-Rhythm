@@ -33,6 +33,10 @@ let notes:[UInt8: Moves] = [
 ]
 
 class SKCharacter: SKSpriteNode, MidiManagerDelegate {
+    func changeTurn() {
+        print("Troca de turno!")
+    }
+    
     func noteOn(note: UInt8) {
         self.move(sound: note)
         print("\(note) on!")

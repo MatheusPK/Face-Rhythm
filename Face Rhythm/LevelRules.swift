@@ -10,19 +10,24 @@ import Foundation
 
 class LevelRules {
     
-    static var levels:[LevelRules] = []
+    static private var levels:[LevelRules] = []
+    static private var currentLevelIndex = 0
+    
+    static private var empty = LevelRules(moveSet: [:], fileName: "", barsInOneTurn: 0, startingBar: 0)
     
     let moveSet: [UInt8:Moves]
     let fileName: String
-    let turnDuration: TimeInterval // tempo
+    let barsInOneTurn: Double
+    let startingBar: Double
     
-    private init(moveSet: [UInt8:Moves], fileName: String, turnDuration: TimeInterval) {
+    private init(moveSet: [UInt8:Moves], fileName: String, barsInOneTurn: Double, startingBar: Double) {
         self.moveSet = moveSet
         self.fileName = fileName
-        self.turnDuration = turnDuration
+        self.barsInOneTurn = barsInOneTurn
+        self.startingBar = startingBar
     }
     
-    func factory() {
+    static func factory() {
         
         let defaultMoveSet:[UInt8:Moves] = [
             0 : .idle,
@@ -32,10 +37,16 @@ class LevelRules {
             70: .mouthPucker
         ]
         
-        let defaultFileName = "C5.5-1.1"
+        let defaultFileName = "C5.5 - 1.1"
         
-        let defaultTurnDuration:TimeInterval = 5
-        
-        LevelRules.levels[0] = LevelRules(moveSet: defaultMoveSet, fileName: defaultFileName, turnDuration: defaultTurnDuration)
+        LevelRules.levels.append(LevelRules(moveSet: defaultMoveSet, fileName: defaultFileName, barsInOneTurn: 4, startingBar: 2))
+    }
+    
+    static public func currentLevel() -> LevelRules{
+        if levels.isEmpty{
+            print("Level Rules Vazio!!")
+            return empty
+        }
+        return levels[currentLevelIndex]
     }
 }

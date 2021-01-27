@@ -11,6 +11,7 @@ import AVFoundation
 protocol MidiManagerDelegate{
     func noteOn(note: UInt8)
     func noteOff()
+    func changeTurn()
 }
 
 class MidiManager{
@@ -29,7 +30,7 @@ class MidiManager{
     }
     
     private func loadFile(){
-        guard let midiFile = Bundle.main.url(forResource: "C5.5 - 1.1", withExtension: ".mid") else{
+        guard let midiFile = Bundle.main.url(forResource: LevelRules.currentLevel().fileName, withExtension: ".mid") else{
             print("Impossivel carregar arquivo Midi!")
             return
         }
@@ -40,19 +41,22 @@ class MidiManager{
         }
         
         self.midiData.load(data: data)
+        
+//        print("BPM: \(self.midiData.beatsPerMinute.value)")
     }
     
-    public func startCheckingNotes(){
+    public func startCheckingNotesAndTurns(){
         let _ = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
     
     @objc private func updateTime(){
+        self.checkTurn()
         self.checkNoteOn()
     }
     
     private func checkNoteOn() {
         let track = self.midiData.noteTracks[0]
-
+        
         for note in track{
             if note.timeStamp.getTimeInSeconds().roundTo(places: 2) == AudioManager.singleInstance.getMusicTimeStamp().roundTo(places: 2){
                 
@@ -61,6 +65,17 @@ class MidiManager{
                 }
                 
                 let _ = Timer.scheduledTimer(timeInterval: note.duration.getTimeInSeconds(), target: self, selector: #selector(scheduleNoteOff), userInfo: nil, repeats: false)
+            }
+        }
+    }
+    
+    private func checkTurn(){
+        let currentTimeStamp = AudioManager.singleInstance.getMusicTimeStamp().roundTo(places: 2)
+        let barDuration: Double = Double(self.midiData.beatsPerMinute.value)/60.0
+        let multiple = barDuration * LevelRules.currentLevel().barsInOneTurn
+        if  currentTimeStamp.truncatingRemainder(dividingBy: multiple) - LevelRules.currentLevel().startingBar == .zero{
+            for delegate in self.delegates{
+                delegate.changeTurn()
             }
         }
     }
