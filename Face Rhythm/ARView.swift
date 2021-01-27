@@ -63,13 +63,16 @@ class ARView: UIViewController, ARSCNViewDelegate {
         guard let up = faceAnchor.blendShapes[.jawOpen] as? Float else {return}
         guard let down = faceAnchor.blendShapes[.mouthPucker] as? Float else {return}
         
-//        let notes:[UInt8: Moves] = [
-//            0 : .idle,
-//            63 : .leftEyeBlink,
-//            65: .rightEyeBlink,
-//            67: .jawOpen,
-//            70: .mouthPucker
-//        ]
+        //mandar apenas o movimento do rosto, tratar na gameviewcontroller
+        
+        
+        let notes:[UInt8: Moves] = [
+            0 : .idle,
+            63 : .leftEyeBlink,
+            65: .rightEyeBlink,
+            67: .jawOpen,
+            70: .mouthPucker
+        ]
         
         let movs:[Moves: UInt8] = [
             .idle : 0,
@@ -78,7 +81,7 @@ class ARView: UIViewController, ARSCNViewDelegate {
             .jawOpen: 67,
             .mouthPucker: 70
         ]
-        
+
         if up > 0.5 {
             //self.ARViewDelegate.movePlayer(sound: 42)
             if self.lastMov != .jawOpen{
@@ -88,13 +91,13 @@ class ARView: UIViewController, ARSCNViewDelegate {
             }
         }
         else if left > 0.5 {
-            
+
             if self.lastMov != .rightEyeBlink{
                 self.lastMov = .rightEyeBlink
                 AudioManager.singleInstance.stopNote()
                 AudioManager.singleInstance.playNote(note: movs[.rightEyeBlink]!)
             }
-            
+
         }
         else if right > 0.5 {
             if  self.lastMov != .leftEyeBlink{
