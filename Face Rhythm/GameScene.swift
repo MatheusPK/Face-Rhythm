@@ -15,8 +15,10 @@ import ARKit
 class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
     
     var myArView:ARView!
-    var character:SKCharacter!
-    var playerTurn: Bool = true
+    private var character:SKCharacter!
+    private var playerTurn: Bool = true
+    private var hasStarted = false
+    
     
     
     override func didMove(to view: SKView) {
@@ -37,9 +39,14 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
     }
     
     
-    func handleFaceExpression(faceExpression: ARFaceAnchor.BlendShapeLocation) {
-        guard playerTurn == true else {return}
-        AudioManager.singleInstance.playNote(note: LevelRules.currentLevel().moveSet.getKeyByValue(value: faceExpression)!)
+    func handleFaceExpression(faceExpression: ARFaceAnchor.BlendShapeLocation?) {
+        guard playerTurn else {return}
+        guard hasStarted else {return}
+        guard let faceExp = faceExpression else {
+            AudioManager.singleInstance.stopNote()
+            return
+        }
+        AudioManager.singleInstance.playNote(note: LevelRules.currentLevel().moveSet.getKeyByValue(value: faceExp)!)
         // ver se a nota tocada e a certa -> funcao na level rules
     }
     
@@ -53,10 +60,12 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
     
     func changeTurn() {
         self.playerTurn.toggle()
+        AudioManager.singleInstance.stopNote()
+        self.hasStarted = true
     }
     
 }
 
 protocol ARViewDelegate {
-    func handleFaceExpression(faceExpression: ARFaceAnchor.BlendShapeLocation)
+    func handleFaceExpression(faceExpression: ARFaceAnchor.BlendShapeLocation?)
 }

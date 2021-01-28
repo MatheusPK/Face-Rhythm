@@ -14,7 +14,7 @@ import SwiftUI
 class ARView: UIViewController, ARSCNViewDelegate {
     //var myGameScene: GameScene
     var ARViewDelegate: ARViewDelegate!
-    var currentMove: ARFaceAnchor.BlendShapeLocation!
+    var currentMove: ARFaceAnchor.BlendShapeLocation? = nil
     
     var arView: ARSCNView!
     
@@ -61,22 +61,30 @@ class ARView: UIViewController, ARSCNViewDelegate {
     func update(withFaceAnchor faceAnchor: ARFaceAnchor) {
     
         //mandar apenas o movimento do rosto, tratar na gameviewcontroller
-        guard var selectedMove = LevelRules.currentLevel().moveSet.values.first else {return}
+//        guard var selectedMove = LevelRules.currentLevel().moveSet.values.first else {return}
+        
+        var selectedMove: ARFaceAnchor.BlendShapeLocation? = nil
         
         for move in LevelRules.currentLevel().moveSet.values {
             guard let faceFactor = faceAnchor.blendShapes[move] as? Float else {return}
-            guard let maxFactor = faceAnchor.blendShapes[selectedMove] as? Float else {return}
-            if(faceFactor > 0.5 && faceFactor > maxFactor) {
-                selectedMove = move
+            if (faceFactor > 0.5){
+                if selectedMove == nil{
+                    selectedMove = move
+                }
+                else{
+                    guard let maxFactor = faceAnchor.blendShapes[selectedMove!] as? Float else {return}
+                    if faceFactor > maxFactor{
+                        selectedMove = move
+                    }
+                }
             }
         }
         
-        
-
         if(self.currentMove != selectedMove) {
             self.ARViewDelegate.handleFaceExpression(faceExpression: selectedMove)
             self.currentMove = selectedMove
         }
+        
         
     }
     

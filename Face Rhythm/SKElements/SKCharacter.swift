@@ -31,7 +31,9 @@ class SKCharacter: SKSpriteNode {
     
     init() {
         super.init(texture: nil, color: .white, size: CGSize(width: 200, height: 280))
-        let _ = characterTextures.map({$0.preload {print("carreguei")}})
+        let _ = characterTextures.map({$0.preload {
+//                                        print("carreguei")
+        }})
         self.setIdleState()
     }
     
