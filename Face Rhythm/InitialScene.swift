@@ -13,6 +13,7 @@ class InitialScene: SKScene {
     var creatorsLabel: SKLabelNode!
     var titleLabel: SKLabelNode!
     var playButton: SKSpriteNode!
+    var playButtonTexture = SKTexture(imageNamed: "playButton")
     
     override func didMove(to view: SKView) {
         self.creatorsLabel = SKLabelNode(text: "Created by Matheus Kulick and Theo Caldas")
@@ -22,7 +23,7 @@ class InitialScene: SKScene {
         self.titleLabel = SKLabelNode(text: "Face Rhythm")
         self.titleLabel.position = CGPoint(x: 0, y: 50)
         
-        self.playButton = SKSpriteNode(color: .red, size: CGSize(width: 100, height: 40))
+        self.playButton = SKSpriteNode(texture: self.playButtonTexture)
         self.playButton.position = CGPoint(x: 0, y: 0)
         
         self.addChild(self.creatorsLabel)

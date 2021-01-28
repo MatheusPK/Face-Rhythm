@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ARKit
 
 
 class LevelRules {
@@ -15,12 +16,12 @@ class LevelRules {
     
     static private var empty = LevelRules(moveSet: [:], fileName: "", barsInOneTurn: 0, startingBar: 0)
     
-    let moveSet: [UInt8:Moves]
+    let moveSet: [UInt8:ARFaceAnchor.BlendShapeLocation]
     let fileName: String
     let barsInOneTurn: Double
     let startingBar: Double
     
-    private init(moveSet: [UInt8:Moves], fileName: String, barsInOneTurn: Double, startingBar: Double) {
+    private init(moveSet: [UInt8:ARFaceAnchor.BlendShapeLocation], fileName: String, barsInOneTurn: Double, startingBar: Double) {
         self.moveSet = moveSet
         self.fileName = fileName
         self.barsInOneTurn = barsInOneTurn
@@ -29,10 +30,9 @@ class LevelRules {
     
     static func factory() {
         
-        let defaultMoveSet:[UInt8:Moves] = [
-            0 : .idle,
-            63 : .leftEyeBlink,
-            65: .rightEyeBlink,
+        let defaultMoveSet:[UInt8:ARFaceAnchor.BlendShapeLocation] = [
+            63 : .mouthLeft,
+            65: .mouthRight,
             67: .jawOpen,
             70: .mouthPucker
         ]
