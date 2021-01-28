@@ -7,6 +7,7 @@
 
 import SpriteKit
 import GameplayKit
+import ARKit
 
 
 
@@ -36,8 +37,12 @@ class GameScene: SKScene, ARViewDelegate {
 //        self.character.move(sound: sound)
     }
     
+    func handleFaceExpression(faceExpression: ARFaceAnchor.BlendShapeLocation) {
+        
+    }
+    
 }
 
 protocol ARViewDelegate {
-    func movePlayer(sound: UInt8)
+    func handleFaceExpression(faceExpression: ARFaceAnchor.BlendShapeLocation)
 }
