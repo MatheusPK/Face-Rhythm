@@ -27,26 +27,25 @@ let actions:[ARFaceAnchor.BlendShapeLocation:SKAction] = [
 
 class SKCharacter: SKSpriteNode {
 
+    var numberOfMovs = 1
     
     init() {
         super.init(texture: nil, color: .white, size: CGSize(width: 200, height: 280))
-        //characterTextures.map({$0.preload {print("carreguei")}})
-        for texture in characterTextures {
-            texture.preload {
-                print("carreguei")
-            }
-        }
-        
+        let _ = characterTextures.map({$0.preload {print("carreguei")}})
         self.setIdleState()
     }
     
     func move(faceExpression: ARFaceAnchor.BlendShapeLocation) {
         guard let action = actions[faceExpression] else {return}
         self.run(action)
+        self.numberOfMovs += 1
     }
     
     func setIdleState() {
-        self.texture = characterTextures[0]
+        self.numberOfMovs -= 1
+        if self.numberOfMovs == 0{
+            self.texture = characterTextures[0]
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
