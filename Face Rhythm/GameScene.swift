@@ -11,10 +11,12 @@ import ARKit
 
 
 
-class GameScene: SKScene, ARViewDelegate {
+
+class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
     
     var myArView:ARView!
-    var character: SKCharacter!
+    var character:SKCharacter!
+    var playerTurn: Bool = true
     
     
     override func didMove(to view: SKView) {
@@ -31,14 +33,26 @@ class GameScene: SKScene, ARViewDelegate {
         
         AudioManager.singleInstance.playMusic()
         MidiManager.singleInstance.startCheckingNotesAndTurns()
+        MidiManager.singleInstance.addDelegate(delegate: self)
     }
     
-    func movePlayer(sound: UInt8) {
-//        self.character.move(sound: sound)
-    }
     
     func handleFaceExpression(faceExpression: ARFaceAnchor.BlendShapeLocation) {
-        
+        guard playerTurn == true else {return}
+        AudioManager.singleInstance.playNote(note: LevelRules.currentLevel().moveSet.getKeyByValue(value: faceExpression)!)
+        // ver se a nota tocada e a certa -> funcao na level rules
+    }
+    
+    func noteOn(note: UInt8) {
+        self.character.move(faceExpression: LevelRules.currentLevel().moveSet[note]!)
+    }
+    
+    func noteOff() {
+        self.character.setIdleState()
+    }
+    
+    func changeTurn() {
+        self.playerTurn.toggle()
     }
     
 }
