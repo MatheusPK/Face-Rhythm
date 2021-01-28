@@ -22,9 +22,9 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
     override func didMove(to view: SKView) {
         
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        self.addChild(SKLabelNode(text: "oi"))
         self.character = SKCharacter()
         self.addChild(self.character)
+        self.backgroundColor = .white
         
         self.myArView = ARView()
         self.myArView.ARViewDelegate = self

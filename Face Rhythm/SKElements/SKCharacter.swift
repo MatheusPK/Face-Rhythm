@@ -10,11 +10,11 @@ import SpriteKit
 import ARKit
 
 let characterTextures:[SKTexture] = [
-    SKTexture(imageNamed: ""),
-    SKTexture(imageNamed: ""),
-    SKTexture(imageNamed: ""),
-    SKTexture(imageNamed: ""),
-    SKTexture(imageNamed: "")
+    SKTexture(imageNamed: "personagem_neutro"),
+    SKTexture(imageNamed: "personagem_boca_pra_esquerda"),
+    SKTexture(imageNamed: "personagem_boca_pra_direita"),
+    SKTexture(imageNamed: "personagem_boca_aberta"),
+    SKTexture(imageNamed: "personagem_biquinho")
 ]
 
 let actions:[ARFaceAnchor.BlendShapeLocation:SKAction] = [
@@ -29,13 +29,15 @@ class SKCharacter: SKSpriteNode {
 
     
     init() {
-        super.init(texture: nil, color: .blue, size: CGSize(width: 50, height: 50))
+        super.init(texture: nil, color: .white, size: CGSize(width: 200, height: 280))
         //characterTextures.map({$0.preload {print("carreguei")}})
         for texture in characterTextures {
             texture.preload {
                 print("carreguei")
             }
         }
+        
+        self.setIdleState()
     }
     
     func move(faceExpression: ARFaceAnchor.BlendShapeLocation) {
