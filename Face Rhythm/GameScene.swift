@@ -62,6 +62,9 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
         self.playerTurn.toggle()
         AudioManager.singleInstance.stopNote()
         self.hasStarted = true
+        if (self.playerTurn){
+            self.myArView.resetTracking()
+        }
     }
     
 }

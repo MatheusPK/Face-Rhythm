@@ -88,6 +88,10 @@ class ARView: UIViewController, ARSCNViewDelegate {
         
     }
     
+    func resetTracking(){
+        self.currentMove = nil
+    }
+    
 }
 
 
