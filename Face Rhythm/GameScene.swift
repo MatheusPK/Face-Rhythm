@@ -58,10 +58,12 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
     }
     
     func noteOn(note: UInt8) {
+        self.removeAllActions()
         self.character.move(faceExpression: LevelRules.currentLevel().moveSet[note]!)
     }
     
     func noteOff() {
+        print("oi")
         self.character.setIdleState()
     }
     

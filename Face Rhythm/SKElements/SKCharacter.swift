@@ -11,6 +11,7 @@ import ARKit
 
 let characterTextures:[SKTexture] = [
     SKTexture(imageNamed: "personagem_neutro"),
+    SKTexture(imageNamed: "personagem_neutro_2"),
     SKTexture(imageNamed: "personagem_boca_pra_direita"),
     SKTexture(imageNamed: "personagem_boca_pra_esquerda"),
     SKTexture(imageNamed: "personagem_boca_aberta"),
@@ -18,10 +19,10 @@ let characterTextures:[SKTexture] = [
 ]
 
 let actions:[ARFaceAnchor.BlendShapeLocation:SKAction] = [
-    .mouthLeft : SKAction.setTexture(characterTextures[1]),
-    .mouthRight : SKAction.setTexture(characterTextures[2]),
-    .jawOpen : SKAction.setTexture(characterTextures[3]),
-    .mouthPucker : SKAction.setTexture(characterTextures[4])
+    .mouthLeft : SKAction.setTexture(characterTextures[2]),
+    .mouthRight : SKAction.setTexture(characterTextures[3]),
+    .jawOpen : SKAction.setTexture(characterTextures[4]),
+    .mouthPucker : SKAction.setTexture(characterTextures[5])
 ]
     
 
@@ -46,7 +47,8 @@ class SKCharacter: SKSpriteNode {
     func setIdleState() {
         self.numberOfMovs -= 1
         if self.numberOfMovs == 0{
-            self.texture = characterTextures[0]
+            self.run(SKAction.repeatForever(SKAction.animate(with: [characterTextures[0], characterTextures[1]], timePerFrame: 0.3)))
+            //self.texture = characterTextures[0]
         }
     }
     
