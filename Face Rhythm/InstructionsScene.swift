@@ -10,11 +10,6 @@ import SpriteKit
 
 class InstructionsScene: SKScene {
     
-//    var instructionLabel1: SKLabelNode!
-//    var instructionLabel2: SKLabelNode!
-//    var instructionLabel3: SKLabelNode!
-//    let instructions:[String] = ["Look at the movements", "Memorize it", "Then repeat"]
-    
     var playButton: SKSpriteNode!
     var backgroundImage: SKSpriteNode!
     
@@ -22,26 +17,14 @@ class InstructionsScene: SKScene {
         
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         
-//        self.instructionLabel1 = SKLabelNode(text: self.instructions[0])
-//        self.instructionLabel1.position = CGPoint(x: 0, y: 30)
-//
-//        self.instructionLabel2 = SKLabelNode(text: self.instructions[1])
-//        self.instructionLabel2.position = CGPoint(x: 0, y: 0)
-//
-//        self.instructionLabel3 = SKLabelNode(text: self.instructions[2])
-//        self.instructionLabel3.position = CGPoint(x: 0, y: -30)
-        
         let playTexture = SKTexture(imageNamed: "playButton")
         self.playButton = SKSpriteNode(texture: playTexture, size: CGSize(width: 120, height: 120))
         self.playButton.position = CGPoint(x: 0, y: -280)
         self.playButton.zPosition = 10
         
-        let texture = SKTexture(imageNamed: "instrucoes")
+        let texture = SKTexture(imageNamed: "instrucoes_2")
         self.backgroundImage = SKSpriteNode(texture: texture, size: self.size)
         
-//        self.addChild(self.instructionLabel1)
-//        self.addChild(self.instructionLabel2)
-//        self.addChild(self.instructionLabel3)
         self.addChild(self.playButton)
         self.addChild(self.backgroundImage)
     }

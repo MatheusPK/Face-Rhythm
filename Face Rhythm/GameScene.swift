@@ -63,7 +63,6 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
     }
     
     func noteOff() {
-        print("oi")
         self.character.setIdleState()
     }
     

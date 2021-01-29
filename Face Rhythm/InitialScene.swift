@@ -10,29 +10,19 @@ import SpriteKit
 
 class InitialScene: SKScene {
     
-//    var creatorsLabel: SKLabelNode!
-//    var titleLabel: SKLabelNode!
     private var playButton: SKSpriteNode!
     private var playButtonTexture = SKTexture(imageNamed: "playButton")
     private var backgroundImage: SKSpriteNode!
-    private var backgroundTexture = SKTexture(imageNamed: "titulo")
+    private var backgroundTexture = SKTexture(imageNamed: "titulo_2")
     
     override func didMove(to view: SKView) {
-//        self.creatorsLabel = SKLabelNode(text: "Created by Matheus Kulick and Theo Caldas")
-//        self.creatorsLabel.fontSize = 15
-//        self.creatorsLabel.position = CGPoint(x: 0, y: -400)
-//
-//        self.titleLabel = SKLabelNode(text: "Face Rhythm")
-//        self.titleLabel.position = CGPoint(x: 0, y: 50)
         
         self.backgroundImage = SKSpriteNode(texture: self.backgroundTexture, size: self.size)
         
         self.playButton = SKSpriteNode(texture: self.playButtonTexture)
-        self.playButton.position = CGPoint(x: 0, y: 0)
+        self.playButton.position = CGPoint(x: 5, y: 0)
         self.playButton.zPosition = 10
         
-//        self.addChild(self.creatorsLabel)
-//        self.addChild(self.titleLabel)
         self.addChild(self.backgroundImage)
         self.addChild(self.playButton)
         
