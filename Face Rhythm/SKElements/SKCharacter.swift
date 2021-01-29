@@ -11,8 +11,8 @@ import ARKit
 
 let characterTextures:[SKTexture] = [
     SKTexture(imageNamed: "personagem_neutro"),
-    SKTexture(imageNamed: "personagem_boca_pra_esquerda"),
     SKTexture(imageNamed: "personagem_boca_pra_direita"),
+    SKTexture(imageNamed: "personagem_boca_pra_esquerda"),
     SKTexture(imageNamed: "personagem_boca_aberta"),
     SKTexture(imageNamed: "personagem_biquinho")
 ]
