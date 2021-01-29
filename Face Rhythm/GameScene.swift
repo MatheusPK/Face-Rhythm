@@ -63,9 +63,7 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
         AudioManager.singleInstance.stopNote()
         self.hasStarted = true
         self.updateUI(screenState: self.playerTurn)
-        if (self.playerTurn){
-            self.myArView.resetTracking()
-        }
+        self.myArView.resetTracking()
     }
     
     func updateUI(screenState: Bool) {
