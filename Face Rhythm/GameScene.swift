@@ -26,12 +26,12 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         self.character = SKCharacter()
         self.addChild(self.character)
-        self.backgroundColor = .white
+        self.backgroundColor = .red
         
         self.myArView = ARView()
         self.myArView.ARViewDelegate = self
         self.view?.addSubview(myArView.view)
-        self.view?.subviews[0].frame = CGRect(x: 15, y: 30, width: 90, height: 90)
+        self.view?.subviews[0].frame = CGRect(x: 15, y: 45, width: 60, height: 100)
         
         AudioManager.singleInstance.playMusic()
         MidiManager.singleInstance.startCheckingNotesAndTurns()
@@ -62,11 +62,29 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
         self.playerTurn.toggle()
         AudioManager.singleInstance.stopNote()
         self.hasStarted = true
+        self.updateUI(screenState: self.playerTurn)
         if (self.playerTurn){
             self.myArView.resetTracking()
         }
     }
     
+    func updateUI(screenState: Bool) {
+        if(screenState) {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view?.subviews[0].frame = CGRect(x: ((self.view?.bounds.maxX)!/2) - 150, y: ((self.view?.bounds.maxY)!/2) - 300, width: 300, height: 400)
+            })
+            
+            self.character.setScale(0.7)
+            self.character.run(SKAction.move(to: CGPoint(x: 0, y: -250), duration: 0.2))
+        }
+        else {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view?.subviews[0].frame = CGRect(x: 15, y: 45, width: 60, height: 100)
+            })
+            self.character.setScale(1)
+            self.character.run(SKAction.move(to: CGPoint(x: 0, y: 0), duration: 0.2))
+        }
+    }
 }
 
 protocol ARViewDelegate {
