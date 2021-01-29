@@ -18,6 +18,8 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
     private var character:SKCharacter!
     private var playerTurn: Bool = true
     private var hasStarted = false
+    private var playerTurnLabel: SKSpriteNode!
+    var playerTurnLabelTexture = SKTexture(imageNamed: "yourTurn")
     
     
     
@@ -32,6 +34,11 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
         self.myArView.ARViewDelegate = self
         self.view?.addSubview(myArView.view)
         self.view?.subviews[0].frame = CGRect(x: 15, y: 45, width: 60, height: 100)
+        
+        self.playerTurnLabel = SKSpriteNode(texture: self.playerTurnLabelTexture, size: CGSize(width: 200, height: 50))
+        self.playerTurnLabel.position = CGPoint(x: 0, y: 350)
+        self.playerTurnLabel.isHidden = true
+        self.addChild(self.playerTurnLabel)
         
         AudioManager.singleInstance.playMusic()
         MidiManager.singleInstance.startCheckingNotesAndTurns()
@@ -74,6 +81,8 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
             
             self.character.setScale(0.7)
             self.character.run(SKAction.move(to: CGPoint(x: 0, y: -250), duration: 0.2))
+            
+            self.playerTurnLabel.isHidden = false
         }
         else {
             UIView.animate(withDuration: 0.3, animations: {
@@ -81,6 +90,7 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
             })
             self.character.setScale(1)
             self.character.run(SKAction.move(to: CGPoint(x: 0, y: 0), duration: 0.2))
+            self.playerTurnLabel.isHidden = true
         }
     }
 }
