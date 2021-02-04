@@ -12,13 +12,10 @@ import SwiftUI
 // MARK: - ARViewIndicator
 
 class ARView: UIViewController, ARSCNViewDelegate {
-    //var myGameScene: GameScene
     var ARViewDelegate: ARViewDelegate!
     var currentMove: ARFaceAnchor.BlendShapeLocation? = nil
     
     var arView: ARSCNView!
-    
-    //var lastMov: Moves? = nil
     
     override func loadView() {
         arView = ARSCNView(frame: .zero)
