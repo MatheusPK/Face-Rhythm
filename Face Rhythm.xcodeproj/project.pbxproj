@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B32B47825C09CB10003BE83 /* SKCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B47725C09CB10003BE83 /* SKCharacter.swift */; };
+		8B32B47B25C09CE70003BE83 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B47A25C09CE70003BE83 /* ARView.swift */; };
+		8B32B48225C0DAAC0003BE83 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B48125C0DAAC0003BE83 /* Extensions.swift */; };
+		8B32B48525C1FC0B0003BE83 /* LevelRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B48425C1FC0B0003BE83 /* LevelRules.swift */; };
+		8B32B48825C200050003BE83 /* InitialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B48725C200050003BE83 /* InitialScene.swift */; };
+		8B32B48C25C2068B0003BE83 /* InstructionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B48B25C2068B0003BE83 /* InstructionsScene.swift */; };
+		8BFA65EC25CC7F3C00D80DA3 /* ARView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA65EB25CC7F3C00D80DA3 /* ARView2.swift */; };
 		E407B6C925C097D8003E6747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B6C825C097D8003E6747 /* AppDelegate.swift */; };
 		E407B6CF25C097D8003E6747 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B6CE25C097D8003E6747 /* GameScene.swift */; };
 		E407B6D125C097D8003E6747 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B6D025C097D8003E6747 /* GameViewController.swift */; };
@@ -47,9 +54,27 @@
 		E407B72B25C09837003E6747 /* MidiEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B70825C09837003E6747 /* MidiEventType.swift */; };
 		E407B72C25C09837003E6747 /* MidiEventUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B70925C09837003E6747 /* MidiEventUserData.swift */; };
 		E407B72D25C09837003E6747 /* MidiExtendedTempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B70A25C09837003E6747 /* MidiExtendedTempo.swift */; };
+		E407B73225C09DB9003E6747 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B73125C09DB9003E6747 /* AudioManager.swift */; };
+		E407B73525C09DD1003E6747 /* MidiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B73425C09DD1003E6747 /* MidiManager.swift */; };
+		E4174D9F25CC84E000861979 /* GameScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4174D9E25CC84E000861979 /* GameScene2.swift */; };
+		E42B159325D2E9B4005F9AFB /* tema 1.1 melodia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B158E25D2E9B3005F9AFB /* tema 1.1 melodia.mp3 */; };
+		E42B159425D2E9B4005F9AFB /* C3 tema.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B158F25D2E9B3005F9AFB /* C3 tema.mp3 */; };
+		E42B159525D2E9B4005F9AFB /* tema 1.1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B159025D2E9B3005F9AFB /* tema 1.1.mp3 */; };
+		E42B159625D2E9B4005F9AFB /* tiktok 1.1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B159125D2E9B3005F9AFB /* tiktok 1.1.mp3 */; };
+		E42B159725D2E9B4005F9AFB /* C3 tiktok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B159225D2E9B3005F9AFB /* C3 tiktok.mp3 */; };
+		E42B159A25D2E9E7005F9AFB /* tema 1.1.mid in Resources */ = {isa = PBXBuildFile; fileRef = E42B159925D2E9E7005F9AFB /* tema 1.1.mid */; };
+		E42B159D25D2E9F0005F9AFB /* tiktok 1.2.mid in Resources */ = {isa = PBXBuildFile; fileRef = E42B159C25D2E9F0005F9AFB /* tiktok 1.2.mid */; };
+		E42B15A025D2EBFF005F9AFB /* tiktok 1.2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B159F25D2EBFF005F9AFB /* tiktok 1.2.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B32B47725C09CB10003BE83 /* SKCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCharacter.swift; sourceTree = "<group>"; };
+		8B32B47A25C09CE70003BE83 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		8B32B48125C0DAAC0003BE83 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8B32B48425C1FC0B0003BE83 /* LevelRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelRules.swift; sourceTree = "<group>"; };
+		8B32B48725C200050003BE83 /* InitialScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScene.swift; sourceTree = "<group>"; };
+		8B32B48B25C2068B0003BE83 /* InstructionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsScene.swift; sourceTree = "<group>"; };
+		8BFA65EB25CC7F3C00D80DA3 /* ARView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView2.swift; sourceTree = "<group>"; };
 		E407B6C525C097D8003E6747 /* Face Rhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Face Rhythm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E407B6C825C097D8003E6747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E407B6CE25C097D8003E6747 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -92,6 +117,17 @@
 		E407B70825C09837003E6747 /* MidiEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiEventType.swift; sourceTree = "<group>"; };
 		E407B70925C09837003E6747 /* MidiEventUserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiEventUserData.swift; sourceTree = "<group>"; };
 		E407B70A25C09837003E6747 /* MidiExtendedTempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiExtendedTempo.swift; sourceTree = "<group>"; };
+		E407B73125C09DB9003E6747 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		E407B73425C09DD1003E6747 /* MidiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiManager.swift; sourceTree = "<group>"; };
+		E4174D9E25CC84E000861979 /* GameScene2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene2.swift; sourceTree = "<group>"; };
+		E42B158E25D2E9B3005F9AFB /* tema 1.1 melodia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tema 1.1 melodia.mp3"; sourceTree = "<group>"; };
+		E42B158F25D2E9B3005F9AFB /* C3 tema.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "C3 tema.mp3"; sourceTree = "<group>"; };
+		E42B159025D2E9B3005F9AFB /* tema 1.1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tema 1.1.mp3"; sourceTree = "<group>"; };
+		E42B159125D2E9B3005F9AFB /* tiktok 1.1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tiktok 1.1.mp3"; sourceTree = "<group>"; };
+		E42B159225D2E9B3005F9AFB /* C3 tiktok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "C3 tiktok.mp3"; sourceTree = "<group>"; };
+		E42B159925D2E9E7005F9AFB /* tema 1.1.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "tema 1.1.mid"; sourceTree = "<group>"; };
+		E42B159C25D2E9F0005F9AFB /* tiktok 1.2.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "tiktok 1.2.mid"; sourceTree = "<group>"; };
+		E42B159F25D2EBFF005F9AFB /* tiktok 1.2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tiktok 1.2.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +141,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B32B47625C09CA00003BE83 /* SKElements */ = {
+			isa = PBXGroup;
+			children = (
+				8B32B47725C09CB10003BE83 /* SKCharacter.swift */,
+			);
+			path = SKElements;
+			sourceTree = "<group>";
+		};
 		E407B6BC25C097D8003E6747 = {
 			isa = PBXGroup;
 			children = (
@@ -124,10 +168,20 @@
 		E407B6C725C097D8003E6747 /* Face Rhythm */ = {
 			isa = PBXGroup;
 			children = (
+				E4174DA125CC84EC00861979 /* Tutorial */,
+				E407B73A25C0A36F003E6747 /* AudioFiles */,
+				8B32B47625C09CA00003BE83 /* SKElements */,
 				E407B6DF25C09837003E6747 /* MidiParser Source */,
 				E407B6C825C097D8003E6747 /* AppDelegate.swift */,
 				E407B6CE25C097D8003E6747 /* GameScene.swift */,
+				8B32B48425C1FC0B0003BE83 /* LevelRules.swift */,
+				8B32B48125C0DAAC0003BE83 /* Extensions.swift */,
+				8B32B48B25C2068B0003BE83 /* InstructionsScene.swift */,
+				8B32B48725C200050003BE83 /* InitialScene.swift */,
+				E407B73425C09DD1003E6747 /* MidiManager.swift */,
+				E407B73125C09DB9003E6747 /* AudioManager.swift */,
 				E407B6D025C097D8003E6747 /* GameViewController.swift */,
+				8B32B47A25C09CE70003BE83 /* ARView.swift */,
 				E407B6D225C097D8003E6747 /* Main.storyboard */,
 				E407B6D525C097D9003E6747 /* Assets.xcassets */,
 				E407B6D725C097D9003E6747 /* Info.plist */,
@@ -241,6 +295,30 @@
 			path = KeySignature;
 			sourceTree = "<group>";
 		};
+		E407B73A25C0A36F003E6747 /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E42B158F25D2E9B3005F9AFB /* C3 tema.mp3 */,
+				E42B159225D2E9B3005F9AFB /* C3 tiktok.mp3 */,
+				E42B158E25D2E9B3005F9AFB /* tema 1.1 melodia.mp3 */,
+				E42B159F25D2EBFF005F9AFB /* tiktok 1.2.mp3 */,
+				E42B159025D2E9B3005F9AFB /* tema 1.1.mp3 */,
+				E42B159125D2E9B3005F9AFB /* tiktok 1.1.mp3 */,
+				E42B159925D2E9E7005F9AFB /* tema 1.1.mid */,
+				E42B159C25D2E9F0005F9AFB /* tiktok 1.2.mid */,
+			);
+			path = AudioFiles;
+			sourceTree = "<group>";
+		};
+		E4174DA125CC84EC00861979 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				E4174D9E25CC84E000861979 /* GameScene2.swift */,
+				8BFA65EB25CC7F3C00D80DA3 /* ARView2.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,8 +376,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E42B159325D2E9B4005F9AFB /* tema 1.1 melodia.mp3 in Resources */,
+				E42B15A025D2EBFF005F9AFB /* tiktok 1.2.mp3 in Resources */,
 				E407B6D425C097D8003E6747 /* Main.storyboard in Resources */,
+				E42B159D25D2E9F0005F9AFB /* tiktok 1.2.mid in Resources */,
+				E42B159425D2E9B4005F9AFB /* C3 tema.mp3 in Resources */,
+				E42B159A25D2E9E7005F9AFB /* tema 1.1.mid in Resources */,
+				E42B159525D2E9B4005F9AFB /* tema 1.1.mp3 in Resources */,
+				E42B159625D2E9B4005F9AFB /* tiktok 1.1.mp3 in Resources */,
 				E407B6D625C097D9003E6747 /* Assets.xcassets in Resources */,
+				E42B159725D2E9B4005F9AFB /* C3 tiktok.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,34 +401,44 @@
 				E407B72A25C09837003E6747 /* MidiNote.swift in Sources */,
 				E407B71025C09837003E6747 /* Util.swift in Sources */,
 				E407B72525C09837003E6747 /* MetaEvent.swift in Sources */,
+				8B32B47B25C09CE70003BE83 /* ARView.swift in Sources */,
 				E407B71225C09837003E6747 /* MidiPatch.swift in Sources */,
 				E407B71625C09837003E6747 /* HeaderChunk.swift in Sources */,
 				E407B71725C09837003E6747 /* MidiInfoKey.swift in Sources */,
 				E407B70B25C09837003E6747 /* MidiTempoTrack.swift in Sources */,
+				8B32B48525C1FC0B0003BE83 /* LevelRules.swift in Sources */,
 				E407B71325C09837003E6747 /* GMPatch.swift in Sources */,
 				E407B71825C09837003E6747 /* EventIterator.swift in Sources */,
 				E407B6CF25C097D8003E6747 /* GameScene.swift in Sources */,
 				E407B71B25C09837003E6747 /* MidiExtendedNoteOnEvent.swift in Sources */,
 				E407B71F25C09837003E6747 /* MidiRawData.swift in Sources */,
+				8B32B47825C09CB10003BE83 /* SKCharacter.swift in Sources */,
 				E407B72025C09837003E6747 /* MidiParameterEvent.swift in Sources */,
 				E407B72C25C09837003E6747 /* MidiEventUserData.swift in Sources */,
 				E407B71E25C09837003E6747 /* EventProtocol.swift in Sources */,
+				8B32B48225C0DAAC0003BE83 /* Extensions.swift in Sources */,
+				E4174D9F25CC84E000861979 /* GameScene2.swift in Sources */,
 				E407B6D125C097D8003E6747 /* GameViewController.swift in Sources */,
+				E407B73225C09DB9003E6747 /* AudioManager.swift in Sources */,
 				E407B72325C09837003E6747 /* MidiTime.swift in Sources */,
+				E407B73525C09DD1003E6747 /* MidiManager.swift in Sources */,
 				E407B70F25C09837003E6747 /* Ticks.swift in Sources */,
 				E407B71525C09837003E6747 /* MidiData.swift in Sources */,
 				E407B72D25C09837003E6747 /* MidiExtendedTempo.swift in Sources */,
 				E407B70E25C09837003E6747 /* MidiNoteTrack.swift in Sources */,
 				E407B72125C09837003E6747 /* EventInfo.swift in Sources */,
 				E407B70C25C09837003E6747 /* SequenceTrackProperty.swift in Sources */,
+				8BFA65EC25CC7F3C00D80DA3 /* ARView2.swift in Sources */,
 				E407B72825C09837003E6747 /* MidiKeySignature.swift in Sources */,
 				E407B6C925C097D8003E6747 /* AppDelegate.swift in Sources */,
 				E407B72B25C09837003E6747 /* MidiEventType.swift in Sources */,
 				E407B71925C09837003E6747 /* MidiSequence.swift in Sources */,
 				E407B71A25C09837003E6747 /* MidiError.swift in Sources */,
 				E407B72725C09837003E6747 /* MetaEventType.swift in Sources */,
+				8B32B48C25C2068B0003BE83 /* InstructionsScene.swift in Sources */,
 				E407B72425C09837003E6747 /* MetaEventProtocol.swift in Sources */,
 				E407B71425C09837003E6747 /* PatchFamily.swift in Sources */,
+				8B32B48825C200050003BE83 /* InitialScene.swift in Sources */,
 				E407B71125C09837003E6747 /* Byte.swift in Sources */,
 				E407B72925C09837003E6747 /* KeySignature.swift in Sources */,
 				E407B71C25C09837003E6747 /* MidiAUPresetEvent.swift in Sources */,
