@@ -56,11 +56,15 @@
 		E407B72D25C09837003E6747 /* MidiExtendedTempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B70A25C09837003E6747 /* MidiExtendedTempo.swift */; };
 		E407B73225C09DB9003E6747 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B73125C09DB9003E6747 /* AudioManager.swift */; };
 		E407B73525C09DD1003E6747 /* MidiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B73425C09DD1003E6747 /* MidiManager.swift */; };
-		E407B73F25C0A3AB003E6747 /* C5.5 - 1.1.mid in Resources */ = {isa = PBXBuildFile; fileRef = E407B73B25C0A3AB003E6747 /* C5.5 - 1.1.mid */; };
-		E407B74025C0A3AB003E6747 /* C5.5 - 1.1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E407B73C25C0A3AB003E6747 /* C5.5 - 1.1.mp3 */; };
-		E407B74125C0A3AB003E6747 /* C3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E407B73D25C0A3AB003E6747 /* C3.mp3 */; };
-		E407B74225C0A3AB003E6747 /* C5.5 - 1.1 (teste).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E407B73E25C0A3AB003E6747 /* C5.5 - 1.1 (teste).mp3 */; };
 		E4174D9F25CC84E000861979 /* GameScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4174D9E25CC84E000861979 /* GameScene2.swift */; };
+		E42B159325D2E9B4005F9AFB /* tema 1.1 melodia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B158E25D2E9B3005F9AFB /* tema 1.1 melodia.mp3 */; };
+		E42B159425D2E9B4005F9AFB /* C3 tema.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B158F25D2E9B3005F9AFB /* C3 tema.mp3 */; };
+		E42B159525D2E9B4005F9AFB /* tema 1.1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B159025D2E9B3005F9AFB /* tema 1.1.mp3 */; };
+		E42B159625D2E9B4005F9AFB /* tiktok 1.1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B159125D2E9B3005F9AFB /* tiktok 1.1.mp3 */; };
+		E42B159725D2E9B4005F9AFB /* C3 tiktok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B159225D2E9B3005F9AFB /* C3 tiktok.mp3 */; };
+		E42B159A25D2E9E7005F9AFB /* tema 1.1.mid in Resources */ = {isa = PBXBuildFile; fileRef = E42B159925D2E9E7005F9AFB /* tema 1.1.mid */; };
+		E42B159D25D2E9F0005F9AFB /* tiktok 1.2.mid in Resources */ = {isa = PBXBuildFile; fileRef = E42B159C25D2E9F0005F9AFB /* tiktok 1.2.mid */; };
+		E42B15A025D2EBFF005F9AFB /* tiktok 1.2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B159F25D2EBFF005F9AFB /* tiktok 1.2.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,11 +119,15 @@
 		E407B70A25C09837003E6747 /* MidiExtendedTempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiExtendedTempo.swift; sourceTree = "<group>"; };
 		E407B73125C09DB9003E6747 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		E407B73425C09DD1003E6747 /* MidiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiManager.swift; sourceTree = "<group>"; };
-		E407B73B25C0A3AB003E6747 /* C5.5 - 1.1.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "C5.5 - 1.1.mid"; sourceTree = "<group>"; };
-		E407B73C25C0A3AB003E6747 /* C5.5 - 1.1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "C5.5 - 1.1.mp3"; sourceTree = "<group>"; };
-		E407B73D25C0A3AB003E6747 /* C3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = C3.mp3; sourceTree = "<group>"; };
-		E407B73E25C0A3AB003E6747 /* C5.5 - 1.1 (teste).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "C5.5 - 1.1 (teste).mp3"; sourceTree = "<group>"; };
 		E4174D9E25CC84E000861979 /* GameScene2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene2.swift; sourceTree = "<group>"; };
+		E42B158E25D2E9B3005F9AFB /* tema 1.1 melodia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tema 1.1 melodia.mp3"; sourceTree = "<group>"; };
+		E42B158F25D2E9B3005F9AFB /* C3 tema.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "C3 tema.mp3"; sourceTree = "<group>"; };
+		E42B159025D2E9B3005F9AFB /* tema 1.1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tema 1.1.mp3"; sourceTree = "<group>"; };
+		E42B159125D2E9B3005F9AFB /* tiktok 1.1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tiktok 1.1.mp3"; sourceTree = "<group>"; };
+		E42B159225D2E9B3005F9AFB /* C3 tiktok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "C3 tiktok.mp3"; sourceTree = "<group>"; };
+		E42B159925D2E9E7005F9AFB /* tema 1.1.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "tema 1.1.mid"; sourceTree = "<group>"; };
+		E42B159C25D2E9F0005F9AFB /* tiktok 1.2.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "tiktok 1.2.mid"; sourceTree = "<group>"; };
+		E42B159F25D2EBFF005F9AFB /* tiktok 1.2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tiktok 1.2.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,10 +298,14 @@
 		E407B73A25C0A36F003E6747 /* AudioFiles */ = {
 			isa = PBXGroup;
 			children = (
-				E407B73D25C0A3AB003E6747 /* C3.mp3 */,
-				E407B73C25C0A3AB003E6747 /* C5.5 - 1.1.mp3 */,
-				E407B73B25C0A3AB003E6747 /* C5.5 - 1.1.mid */,
-				E407B73E25C0A3AB003E6747 /* C5.5 - 1.1 (teste).mp3 */,
+				E42B158F25D2E9B3005F9AFB /* C3 tema.mp3 */,
+				E42B159225D2E9B3005F9AFB /* C3 tiktok.mp3 */,
+				E42B158E25D2E9B3005F9AFB /* tema 1.1 melodia.mp3 */,
+				E42B159F25D2EBFF005F9AFB /* tiktok 1.2.mp3 */,
+				E42B159025D2E9B3005F9AFB /* tema 1.1.mp3 */,
+				E42B159125D2E9B3005F9AFB /* tiktok 1.1.mp3 */,
+				E42B159925D2E9E7005F9AFB /* tema 1.1.mid */,
+				E42B159C25D2E9F0005F9AFB /* tiktok 1.2.mid */,
 			);
 			path = AudioFiles;
 			sourceTree = "<group>";
@@ -364,12 +376,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E407B74225C0A3AB003E6747 /* C5.5 - 1.1 (teste).mp3 in Resources */,
-				E407B74125C0A3AB003E6747 /* C3.mp3 in Resources */,
-				E407B74025C0A3AB003E6747 /* C5.5 - 1.1.mp3 in Resources */,
+				E42B159325D2E9B4005F9AFB /* tema 1.1 melodia.mp3 in Resources */,
+				E42B15A025D2EBFF005F9AFB /* tiktok 1.2.mp3 in Resources */,
 				E407B6D425C097D8003E6747 /* Main.storyboard in Resources */,
-				E407B73F25C0A3AB003E6747 /* C5.5 - 1.1.mid in Resources */,
+				E42B159D25D2E9F0005F9AFB /* tiktok 1.2.mid in Resources */,
+				E42B159425D2E9B4005F9AFB /* C3 tema.mp3 in Resources */,
+				E42B159A25D2E9E7005F9AFB /* tema 1.1.mid in Resources */,
+				E42B159525D2E9B4005F9AFB /* tema 1.1.mp3 in Resources */,
+				E42B159625D2E9B4005F9AFB /* tiktok 1.1.mp3 in Resources */,
 				E407B6D625C097D9003E6747 /* Assets.xcassets in Resources */,
+				E42B159725D2E9B4005F9AFB /* C3 tiktok.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +583,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3MWCW3Z467;
+				DEVELOPMENT_TEAM = T9R9UW74ZM;
 				INFOPLIST_FILE = "Face Rhythm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -586,7 +602,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3MWCW3Z467;
+				DEVELOPMENT_TEAM = T9R9UW74ZM;
 				INFOPLIST_FILE = "Face Rhythm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

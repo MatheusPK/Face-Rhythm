@@ -22,7 +22,8 @@ let actions:[ARFaceAnchor.BlendShapeLocation:SKAction] = [
     .mouthLeft : SKAction.setTexture(characterTextures[2]),
     .mouthRight : SKAction.setTexture(characterTextures[3]),
     .jawOpen : SKAction.setTexture(characterTextures[4]),
-    .mouthPucker : SKAction.setTexture(characterTextures[5])
+    .mouthPucker : SKAction.setTexture(characterTextures[5]),
+    .browInnerUp: SKAction.setTexture(characterTextures[5])
 ]
     
 
