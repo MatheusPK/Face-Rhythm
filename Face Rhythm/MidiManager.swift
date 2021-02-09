@@ -71,13 +71,19 @@ class MidiManager{
     
     private func checkTurn(){
         let currentTimeStamp = AudioManager.singleInstance.getMusicTimeStamp().roundTo(places: 2)
-        let barDuration: Double = Double(self.midiData.beatsPerMinute.value)/60.0
-        let multiple = barDuration * LevelRules.currentLevel().barsInOneTurn
-        if  currentTimeStamp.truncatingRemainder(dividingBy: multiple) - LevelRules.currentLevel().startingBar == .zero{
+        let barDuration: Double = 240.0/Double(self.midiData.beatsPerMinute.value)
+        let multiple: Double = barDuration * LevelRules.currentLevel().barsInOneTurn
+        let tinyOffset: Double = 0.1
+        let condition = currentTimeStamp.truncatingRemainder(dividingBy: multiple) - (LevelRules.currentLevel().startingBar - 1)*barDuration - tinyOffset
+        if doubleEqual(condition.roundTo(places: 2), .zero){
             for delegate in self.delegates{
                 delegate.changeTurn()
             }
         }
+    }
+    
+    func doubleEqual(_ a: Double, _ b: Double) -> Bool {
+        return fabs(a - b) < Double.ulpOfOne
     }
     
     @objc private func scheduleNoteOff(){

@@ -12,34 +12,46 @@ import ARKit
 class LevelRules {
     
     static private var levels:[LevelRules] = []
-    static private var currentLevelIndex = 0
+    static private var currentLevelIndex = 1
     
-    static private var empty = LevelRules(moveSet: [:], fileName: "", barsInOneTurn: 0, startingBar: 0)
+    static private var empty = LevelRules(moveSet: [:], fileName: "", noteFileName: "", barsInOneTurn: 0, startingBar: 0)
     
     let moveSet: [UInt8:ARFaceAnchor.BlendShapeLocation]
     let fileName: String
+    let noteFileName: String
     let barsInOneTurn: Double
     let startingBar: Double
     
-    private init(moveSet: [UInt8:ARFaceAnchor.BlendShapeLocation], fileName: String, barsInOneTurn: Double, startingBar: Double) {
+    private init(moveSet: [UInt8:ARFaceAnchor.BlendShapeLocation], fileName: String, noteFileName: String, barsInOneTurn: Double, startingBar: Double) {
         self.moveSet = moveSet
         self.fileName = fileName
+        self.noteFileName = noteFileName
         self.barsInOneTurn = barsInOneTurn
         self.startingBar = startingBar
     }
     
     static func factory() {
         
-        let defaultMoveSet:[UInt8:ARFaceAnchor.BlendShapeLocation] = [
+        let moveSet1:[UInt8:ARFaceAnchor.BlendShapeLocation] = [
             63 : .mouthLeft,
             65: .mouthRight,
             67: .jawOpen,
             70: .mouthPucker
         ]
         
-        let defaultFileName = "C5.5 - 1.1"
         
-        LevelRules.levels.append(LevelRules(moveSet: defaultMoveSet, fileName: defaultFileName, barsInOneTurn: 4, startingBar: 2))
+        LevelRules.levels.append(LevelRules(moveSet: moveSet1, fileName: "tema 1.1", noteFileName: "C3 tema", barsInOneTurn: 4, startingBar: 2))
+        
+        let moveSet2:[UInt8:ARFaceAnchor.BlendShapeLocation] = [
+            78: .mouthLeft,
+            75: .mouthRight,
+            76: .jawOpen,
+            71: .mouthPucker,
+            73: .browInnerUp
+        ]
+        
+        LevelRules.levels.append(LevelRules(moveSet: moveSet2, fileName: "tiktok 1.2", noteFileName: "C3 tiktok", barsInOneTurn: 2, startingBar: 2))
+        
     }
     
     static public func currentLevel() -> LevelRules{

@@ -28,7 +28,7 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         self.character = SKCharacter()
         self.addChild(self.character)
-        self.backgroundColor = .red
+        self.backgroundColor = #colorLiteral(red: 0.421882242, green: 0.5917235613, blue: 0.9981047511, alpha: 1)
         
         self.myArView = ARView()
         self.myArView.ARViewDelegate = self
@@ -59,6 +59,7 @@ class GameScene: SKScene, ARViewDelegate, MidiManagerDelegate {
     
     func noteOn(note: UInt8) {
         self.character.removeAllActions()
+//        print(note)
         self.character.move(faceExpression: LevelRules.currentLevel().moveSet[note]!)
     }
     

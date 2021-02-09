@@ -31,7 +31,7 @@ class AudioManager{
     }
     
     private func loadEngine() throws{
-        if let note = Bundle.main.url(forResource: "C3", withExtension: ".mp3"){
+        if let note = Bundle.main.url(forResource: LevelRules.currentLevel().noteFileName, withExtension: ".mp3"){
             self.singleNoteFile = try AVAudioFile(forReading: note)
         }
         else{
