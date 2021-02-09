@@ -13,7 +13,6 @@
 		8B32B48525C1FC0B0003BE83 /* LevelRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B48425C1FC0B0003BE83 /* LevelRules.swift */; };
 		8B32B48825C200050003BE83 /* InitialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B48725C200050003BE83 /* InitialScene.swift */; };
 		8B32B48C25C2068B0003BE83 /* InstructionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32B48B25C2068B0003BE83 /* InstructionsScene.swift */; };
-		8BFA65EC25CC7F3C00D80DA3 /* ARView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA65EB25CC7F3C00D80DA3 /* ARView2.swift */; };
 		E407B6C925C097D8003E6747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B6C825C097D8003E6747 /* AppDelegate.swift */; };
 		E407B6CF25C097D8003E6747 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B6CE25C097D8003E6747 /* GameScene.swift */; };
 		E407B6D125C097D8003E6747 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B6D025C097D8003E6747 /* GameViewController.swift */; };
@@ -56,7 +55,6 @@
 		E407B72D25C09837003E6747 /* MidiExtendedTempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B70A25C09837003E6747 /* MidiExtendedTempo.swift */; };
 		E407B73225C09DB9003E6747 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B73125C09DB9003E6747 /* AudioManager.swift */; };
 		E407B73525C09DD1003E6747 /* MidiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407B73425C09DD1003E6747 /* MidiManager.swift */; };
-		E4174D9F25CC84E000861979 /* GameScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4174D9E25CC84E000861979 /* GameScene2.swift */; };
 		E42B159325D2E9B4005F9AFB /* tema 1.1 melodia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B158E25D2E9B3005F9AFB /* tema 1.1 melodia.mp3 */; };
 		E42B159425D2E9B4005F9AFB /* C3 tema.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B158F25D2E9B3005F9AFB /* C3 tema.mp3 */; };
 		E42B159525D2E9B4005F9AFB /* tema 1.1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E42B159025D2E9B3005F9AFB /* tema 1.1.mp3 */; };
@@ -74,7 +72,6 @@
 		8B32B48425C1FC0B0003BE83 /* LevelRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelRules.swift; sourceTree = "<group>"; };
 		8B32B48725C200050003BE83 /* InitialScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScene.swift; sourceTree = "<group>"; };
 		8B32B48B25C2068B0003BE83 /* InstructionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsScene.swift; sourceTree = "<group>"; };
-		8BFA65EB25CC7F3C00D80DA3 /* ARView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView2.swift; sourceTree = "<group>"; };
 		E407B6C525C097D8003E6747 /* Face Rhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Face Rhythm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E407B6C825C097D8003E6747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E407B6CE25C097D8003E6747 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -119,7 +116,6 @@
 		E407B70A25C09837003E6747 /* MidiExtendedTempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiExtendedTempo.swift; sourceTree = "<group>"; };
 		E407B73125C09DB9003E6747 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		E407B73425C09DD1003E6747 /* MidiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiManager.swift; sourceTree = "<group>"; };
-		E4174D9E25CC84E000861979 /* GameScene2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene2.swift; sourceTree = "<group>"; };
 		E42B158E25D2E9B3005F9AFB /* tema 1.1 melodia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tema 1.1 melodia.mp3"; sourceTree = "<group>"; };
 		E42B158F25D2E9B3005F9AFB /* C3 tema.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "C3 tema.mp3"; sourceTree = "<group>"; };
 		E42B159025D2E9B3005F9AFB /* tema 1.1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tema 1.1.mp3"; sourceTree = "<group>"; };
@@ -168,7 +164,6 @@
 		E407B6C725C097D8003E6747 /* Face Rhythm */ = {
 			isa = PBXGroup;
 			children = (
-				E4174DA125CC84EC00861979 /* Tutorial */,
 				E407B73A25C0A36F003E6747 /* AudioFiles */,
 				8B32B47625C09CA00003BE83 /* SKElements */,
 				E407B6DF25C09837003E6747 /* MidiParser Source */,
@@ -310,15 +305,6 @@
 			path = AudioFiles;
 			sourceTree = "<group>";
 		};
-		E4174DA125CC84EC00861979 /* Tutorial */ = {
-			isa = PBXGroup;
-			children = (
-				E4174D9E25CC84E000861979 /* GameScene2.swift */,
-				8BFA65EB25CC7F3C00D80DA3 /* ARView2.swift */,
-			);
-			path = Tutorial;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -417,7 +403,6 @@
 				E407B72C25C09837003E6747 /* MidiEventUserData.swift in Sources */,
 				E407B71E25C09837003E6747 /* EventProtocol.swift in Sources */,
 				8B32B48225C0DAAC0003BE83 /* Extensions.swift in Sources */,
-				E4174D9F25CC84E000861979 /* GameScene2.swift in Sources */,
 				E407B6D125C097D8003E6747 /* GameViewController.swift in Sources */,
 				E407B73225C09DB9003E6747 /* AudioManager.swift in Sources */,
 				E407B72325C09837003E6747 /* MidiTime.swift in Sources */,
@@ -428,7 +413,6 @@
 				E407B70E25C09837003E6747 /* MidiNoteTrack.swift in Sources */,
 				E407B72125C09837003E6747 /* EventInfo.swift in Sources */,
 				E407B70C25C09837003E6747 /* SequenceTrackProperty.swift in Sources */,
-				8BFA65EC25CC7F3C00D80DA3 /* ARView2.swift in Sources */,
 				E407B72825C09837003E6747 /* MidiKeySignature.swift in Sources */,
 				E407B6C925C097D8003E6747 /* AppDelegate.swift in Sources */,
 				E407B72B25C09837003E6747 /* MidiEventType.swift in Sources */,
@@ -583,7 +567,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T9R9UW74ZM;
+				DEVELOPMENT_TEAM = 3MWCW3Z467;
 				INFOPLIST_FILE = "Face Rhythm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -602,7 +586,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T9R9UW74ZM;
+				DEVELOPMENT_TEAM = 3MWCW3Z467;
 				INFOPLIST_FILE = "Face Rhythm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
